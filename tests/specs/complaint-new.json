@@ -1,0 +1,20 @@
+[
+  {
+    "name": "New complaint",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Start complaint creation flow"
+            }
+          }
+        ],
+        "send": {
+          "callback": "complaint:new"
+        }
+      }
+    ]
+  }
+]
